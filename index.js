@@ -320,7 +320,7 @@ async function starts() {
 					break
 			case 'owner':
                  client.sendMessage(from, {displayname: "Jeff", vcard: vcard}, MessageType.contact, { quoted: mek})
-                 client.sendMessage(from, 'itu pacar ku eh owner ku ><',MessageType.text, { quoted: mek} )
+                 client.sendMessage(from, 'Tuh ownerku kesayanganku ✨',MessageType.text, { quoted: mek} )
                  break
                  case 'fitnah':	
 				case 'fake':          
@@ -332,7 +332,7 @@ async function starts() {
                     costum(pesan, isi, pesan2)
                     break
                 case 'fakereplay':
-                   client.reply(from, 'ange mas', 'mending lari', "0823-877101916")
+                   client.reply(from, 'ange bre', 'mending lari', "0821-6936-9877")
                    break
                 case 'but':
                     client.reply(from, 'asw', Message.Type.text)
@@ -566,7 +566,7 @@ async function starts() {
 				case 'rtext':
 					if (args.length < 1) return reply(mess.blank)
 					tels5 = body.slice(7)
-					if (tels5.length > 10) return reply('Teksnya kepanjangan, maksimal 10 karakter')
+					if (tels5.length > 10) return reply('Teksnya kepanjangan tod, maksimal 10 karakter')
 					reply(mess.wait)
 					buffer = await getBuffer(`https://api.vhtear.com/romancetext?text=${tels5}&apikey=ANTIGRATISNIHANJENKKK`)
 					client.sendMessage(from, buffer, image, {quoted: mek, caption: tels5})
@@ -574,7 +574,7 @@ async function starts() {
 				case 'water':
 					if (args.length < 1) return reply(mess.blank)
 					tels = body.slice(7)
-					if (tels.length > 15) return reply('Teksnya kepanjangan, maksimal 20 karakter')
+					if (tels.length > 15) return reply('Teksnya kepanjangan tod, maksimal 20 karakter')
 					reply(mess.wait)
 					anu = await fetchJson(`https://zeksapi.herokuapp.com/api/tfire?text=${tels}&apikey=xptnbot352`, {method: 'get'})
 					buffer = await getBuffer(anu.result)
@@ -583,7 +583,7 @@ async function starts() {
 				case 'firetext':
 					if (args.length < 1) return reply(mess.blank)
 					tels = body.slice(7)
-					if (tels.ength > 10) return reply('Teksnya kepanjangan, maksimal 9 karakter')
+					if (tels.ength > 10) return reply('Teksnya kepanjangan tod, maksimal 9 karakter')
 					reply(mess.wait)
 					anu = await fetchJson(`https://zeksapi.herokuapp.com/api/tlight?text=${tels}&apikey=xptnbot352`, {method: 'get'})
 					buff = await getBuffer(anu.result)
@@ -592,7 +592,7 @@ async function starts() {
 				case 'textdark':
 					if (args.length < 1) return reply(mess.blank)
 					tels = body.slice(9)
-					if (tels.ength > 10) return reply('Teksnya kepanjangan, maksimal 9 karakter')
+					if (tels.ength > 10) return reply('Teksnya kepanjangan tod, maksimal 9 karakter')
 					reply(mess.wait)
 					anu = await fetchJson(`http://melodicxt.herokuapp.com/api/txtcustom?theme=metal_dark_gold&text=${tels}&apiKey=administrator`, {method: 'get'})
 					buff = await getBuffer(anu.result)
@@ -601,7 +601,7 @@ async function starts() {
 				case 'textblue':
 					if (args.length < 1) return reply(mess.blank)
 					tels = body.slice(9)
-					if (tels.ength > 10) return reply('Teksnya kepanjangan, maksimal 9 karakter')
+					if (tels.ength > 10) return reply('Teksnya kepanjangan tod, maksimal 9 karakter')
 					reply(mess.wait)
 					anu = await fetchJson(`http://melodicxt.herokuapp.com/api/txtcustom?theme=blue_metal&text=${tels}&apiKey=administrator`, {method: 'get'})
 					buff = await getBuffer(anu.result)
@@ -610,7 +610,7 @@ async function starts() {
 				case 'textsky':
 					if (args.length < 1) return reply(mess.blank)
 					tels = body.slice(9)
-					if (tels.ength > 10) return reply('Teksnya kepanjangan, maksimal 9 karakter')
+					if (tels.ength > 10) return reply('Teksnya kepanjangan njeng, maksimal 9 karakter')
 					reply(mess.wait)
 					anu = await fetchJson(`https://hujanapi.herokuapp.com/api/sky_online?text=${tels}&apiKey=freetrial`, {method: 'get'})
 					buff = await getBuffer(anu.result.result)
@@ -694,7 +694,7 @@ async function starts() {
                     if (!isBotGroupAdmins) return reply(mess.only.Badmin)
                     media = await client.downloadAndSaveMediaMessage(mek)
                     await client.updateProfilePicture (from, media)
-                    reply('Sukses mengganti icon Grup')
+                    reply('Yeay Sukses mengganti icon Grup')
                     break
                 case 'apakah':
 					apakah = body.slice(1)
@@ -814,7 +814,7 @@ async function starts() {
                          text: ress,
                          contextInfo: {mentionedJid: [nomor]},
                      }
-                    client.sendMessage('6282351208767@s.whatsapp.net', options, text, {quoted: mek})
+                    client.sendMessage('6282169369877@s.whatsapp.net', options, text, {quoted: mek})
                     reply('REQUEST ANDA TELAH SAMPAI ke owner BOT, Requests palsu/main2 tidak akan ditanggapi.')
                     break
 				case 'meme':
@@ -1962,7 +1962,7 @@ async function starts() {
 					break
 				//frendowner
 				case `addadmin`:
-                   if (!isOwner) return reply('Perintah ini hanya bisa di gunakan oleh Owner Nafiz!', id)
+                   if (!isOwner) return reply('Perintah ini hanya bisa di gunakan oleh Owner Ferdi!', id)
                    for (let i = 0; i < mentionedJidList.length; i++) {
                    adminNumber.push(mentionedJidList[i])
                    fs.writeFileSync('./lib/database/admin.json', JSON.stringify(adminNumber))
